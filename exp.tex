@@ -14,12 +14,22 @@
 	%\smallskip
 	\smallbreak
 	%\bigskip
-	Proyecto asignado: Radar Primario Argentino.
 	\begin{itemize}
-	    \item{Desarrollo en MPSoC de AMD/Xilinx.}
-		\item{Yocto/Petalinux y FreeRTOS.}
-		\item{Desarrollo de drivers y protocolos.}
-		\item{C/C++ y Python 3.}
+		\item Radar Primario Argentino:
+		\begin{itemize}
+			\item{Desarrollo de los servicios de recepción, configuración y sincronismo en C++ del backend radar.}
+			\item{Desarrollo de las aplicaciones de tiempo real en C y FreeRTOS para los núcleos R5.}
+			\item{Implementé las recetas de Bitbake que permiten construir las imágenes de Petalinux.}
+			\item{Implementé un mecanismo de \emph{flavoring} a partir de mis conocimientos sobre el funcionamiento de Yocto.}
+			\item{Logré crear un sistema de \emph{layers} de Yocto que permitió reutilizar las recetas dentro del departamento.}
+			\item{Pude resolver la falta de un \emph{BSP} para Petalinux en una placa diseñada por un proveedor, el mecanismo de solución que descubrí forma parte de la documentación de la empresa.}
+			\item{Extenso uso de MQTT, Protobuffer, ZMQ, keepalived y OpenAMP.}
+	    	\item{Desarrollo en MPSoC de AMD/Xilinx.}
+		\end{itemize}
+		\item Satélite SABIA-Mar:
+		\begin{itemize}
+	    	\item{Diseñé e implemente en Python 3 la herramienta \emph{Sistema de Inyección de Soft-errors} (SISE). Este sistema simula los efectos lógicos de la radiación en un microcontrolador M4 y permite evaluar las técnicas de mitigación de errores.}
+		\end{itemize}
 	\end{itemize}
 	\smallbreak
     \emph{INVAP} es la principal empresa tecnológica de Argentina (nuclear, aeroespacial y defensa).
@@ -40,6 +50,15 @@
 	\smallbreak
 	%\bigskip
 	Ingeniería Electrónica - Técnicas Digitales II.
+	\begin{itemize}
+	    \item{Modernicé la cátedra para incluir:}
+		\begin{itemize}
+			\item{Teoría y práctica de sistemas operativos de tiempo real.}
+			\item{Uso avanzado del lenguaje C.}
+			\item{Flujo profesional de trabajo: git, CMake, CMocka y Doxygen.}
+		\end{itemize}
+		\item{Implementé un laboratorio a partir del \emph{port} POSIX de FreeRTOS.}
+	\end{itemize}
 }
 
 \bigskip
@@ -57,77 +76,78 @@
 	\smallbreak
 	%\bigskip
 	\begin{itemize}
-	    \item{Firmware para sistemas embebidos.}
-	    \item{Software de telemetría y protocolos de comunicaciones.}
+	    \item{Implementé un sistema de telemetría para monitorear y controlar todos los radares de Vialidad Nacional.}
+	    \item{Integré un sistema de perfiladores laser para el desarrollo del primer sistema \emph{Weigh in motion} (WIM) de la República Argentina.}
+		\item{Implementé un programa que acondiciona una nube de puntos para su ingesta en la inteligencia artificial que clasifica los vehículos.}
 	\end{itemize}
 	\smallbreak
     \emph{ATSA} es un proveedor de soluciones de infraestructura de tránsito vehicular.
 }
 
 \bigskip
-%Experiencia 4
-\parbox[t][][t]{\linewidth}{
-	\parbox{\linewidth}{
-		\textbf{Auditor Externo}
-			\hfill
-			{Abr. 2018 --- Dic. 2020}
-		}
-	\smallbreak
-	%\smallskip
-	\parbox{\linewidth}{Picado, Levy De Angelis \& Asociados}
-	%\smallskip
-	\smallbreak
-	%\bigskip
-	\begin{itemize}
-	    \item{Auditorías de instalaciones.}
-	    \item{Asistencia a contratas.}
-	\end{itemize}
-	\smallbreak
-	Actividades realizadas al servicio de \emph{Telecentro SA}.
+%%Experiencia 4
+%\parbox[t][][t]{\linewidth}{
+%	\parbox{\linewidth}{
+%		\textbf{Auditor Externo}
+%			\hfill
+%			{Abr. 2018 --- Dic. 2020}
+%		}
+%	\smallbreak
+%	%\smallskip
+%	\parbox{\linewidth}{Picado, Levy De Angelis \& Asociados}
+%	%\smallskip
+%	\smallbreak
+%	%\bigskip
+%	\begin{itemize}
+%	    \item{Auditorías de instalaciones.}
+%	    \item{Asistencia a contratas.}
+%	\end{itemize}
+%	\smallbreak
+%	Actividades realizadas al servicio de \emph{Telecentro SA}.
+%
+%    Realicé auditorías de tecnologías \emph{HFC} y \emph{GPON}.
+%}
 
-    Realicé auditorías de tecnologías \emph{HFC} y \emph{GPON}.
-}
+%%Experiencia 5
+%\bigskip
+%\parbox[t][][t]{\linewidth}{
+%	{\parbox{\linewidth}{
+%		\parbox{\linewidth}{
+%			\textbf{Encargado de electrónica}
+%			\hfill
+%			{Abr. 2015 --- Abr. 2018}
+%		}
+%	}}
+%	\smallbreak
+%	\parbox{\linewidth}{Tecnotrans SRL}
+%	\smallbreak
+%	\begin{itemize}
+%	    \item{Planificación y supervisión de la producción y servicio técnico.}
+%	    \item{Compras técnicas.}
+%	\end{itemize}
+%	\smallbreak
+%	\emph{Tecnotrans} es un fabricante de controladores de tránsito, semáforos y semáforos ferroviarios.
+%}
 
-%Experiencia 5
-\bigskip
-\parbox[t][][t]{\linewidth}{
-	{\parbox{\linewidth}{
-		\parbox{\linewidth}{
-			\textbf{Encargado de electrónica}
-			\hfill
-			{Abr. 2015 --- Abr. 2018}
-		}
-	}}
-	\smallbreak
-	\parbox{\linewidth}{Tecnotrans SRL}
-	\smallbreak
-	\begin{itemize}
-	    \item{Planificación y supervisión de la producción y servicio técnico.}
-	    \item{Compras técnicas.}
-	\end{itemize}
-	\smallbreak
-	\emph{Tecnotrans} es un fabricante de controladores de tránsito, semáforos y semáforos ferroviarios.
-}
-
-%Experiencia 6
-\bigskip
-\parbox[t][][t]{\linewidth}{
-	{\parbox{\linewidth}{
-		\parbox{\linewidth}{
-			\textbf{Instrumentista}
-			\hfill
-			{Ago. 2012 --- Abr. 2015}
-		}
-	}}
-	\smallbreak
-	\parbox{\linewidth}{Honeywell Process Solutions.}
-	\smallbreak
-	\begin{itemize}
-	    \item{Calibración de instrumental bajo norma ISO-IEC 17025.}
-	    \item{Mantenimiento de sistemas de detección de incendios.}
-	\end{itemize}
-	\smallbreak
-	Realicé viajes al interior del país para calibrar instrumental de varias industrias, entre los rubros más destacados, metalúrgica, cosmética, farmacéutica y petrolera.\\
-    \emph{Honeywell} es una empresa dedicada a la fabricación de sistemas industriales y aeroespaciales.
-}
+%%Experiencia 6
+%\bigskip
+%\parbox[t][][t]{\linewidth}{
+%	{\parbox{\linewidth}{
+%		\parbox{\linewidth}{
+%			\textbf{Instrumentista}
+%			\hfill
+%			{Ago. 2012 --- Abr. 2015}
+%		}
+%	}}
+%	\smallbreak
+%	\parbox{\linewidth}{Honeywell Process Solutions.}
+%	\smallbreak
+%	\begin{itemize}
+%	    \item{Calibración de instrumental bajo norma ISO-IEC 17025.}
+%	    \item{Mantenimiento de sistemas de detección de incendios.}
+%	\end{itemize}
+%	\smallbreak
+%	Realicé viajes al interior del país para calibrar instrumental de varias industrias, entre los rubros más destacados, metalúrgica, cosmética, farmacéutica y petrolera.\\
+%    \emph{Honeywell} es una empresa dedicada a la fabricación de sistemas industriales y aeroespaciales.
+%}
 
