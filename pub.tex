@@ -1,4 +1,8 @@
 \section{Publicaciones y proyectos}
+\vspace{2em}
+
+% Reducir espacio vertical localmente dentro de esta sección (override del parskip global)
+\begingroup\setlength{\parskip}{0.5em}
 
 \newcommand{\pub}[5]{
 	\parbox[t][][t]{\linewidth}{%
@@ -23,8 +27,12 @@
 \pub{Jun. 2022}{Evaluador de microcontroladores para misiones espaciales}{}{Un conjunto de herramientas que permite inyectar SEFI-SEU y obtener la figura de mérito de un microcontrolador. Proyecto impulsado por INVAP en el marco de la Maestría en Internet de las Cosas de la Universidad de Buenos Aires.}{
 }
 
+
 \pub{May. 2021}{Monitoreo Ambiental Integrado a Enterprise Buildings Integrator de Honeywell}{}{Un sistema flexible que une el protocolo MQTT para una red de sensores y los presenta en protocolo MODBUS al entorno propietario que se encuentra funcionando en planta, realizado en el marco de la Especialización en IoT de la Universidad de Buenos Aires}{
 }
+
+% Fin del bloque con parskip reducido
+\endgroup
 
 %\pub{Aug. 2018}{SRMPDS (Best paper)}{10.1145/3229710.3229759}{Flexible device sharing in PCIe clusters using
 %Device~Lending}{%
