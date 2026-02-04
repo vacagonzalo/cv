@@ -15,6 +15,7 @@
 \usepackage[a4paper,left=.4in,right=.4in,top=.4in,bottom=.4in]{geometry}
 \usepackage{lastpage}
 \usepackage{xcolor}
+\usepackage{paracol}
 \AtBeginDocument{\color{darkgray}}
 
 \definecolor{infoboxcolor}{gray}{.97}
@@ -60,15 +61,15 @@
 \begin{document}
 \pagestyle{empty}
 
+% Header en dos columnas: nombre a la izquierda, caja de contacto a la derecha
 \begin{minipage}[t][1.8cm][c]{\lcolsize}
 	{\huge\textbf{Gonzalo Nahuel Vaca}}\\[1.2em]
 	{\Large{Ingeniero de Software Embebido}}
 \end{minipage}%
 \hfill%
-\protect\begin{minipage}[t][1.8cm][c]{\rcolsize}
+\begin{minipage}[t][1.8cm][c]{\rcolsize}
 	\begin{adjustbox}{max width=\textwidth}
 	\fcolorbox{black}{infoboxcolor}{
-		%\centering
 		\begin{tabular*}{\linewidth}{r|l}
 			\large{\fixedphonesymbol{}} &
 			{\href{tel:+5491123681920}{{+54}~{9}~{11}~{2368}~{1920}}}\\
@@ -78,25 +79,21 @@
 			{\href{www.linkedin.com/in/vaca-gonzalo}{{Gonzalo Nahuel Vaca}}} \\
 			\large{\githubsymbol{}} &
 			{\href{https://github.com/vacagonzalo}{{vacagonzalo}}} \\
-			\large{\home{}} & García Silva 121, Morón, BA \\
+			\large{\home{}} & Garc\'ia Silva 121, Mor\'on, BA \\
 		\end{tabular*}
 	}
 	\end{adjustbox}
 \end{minipage}
 
-%\bigskip
+% Separaci\'on entre el encabezado y el contenido principal
+\vspace{2em}
 
-\begin{minipage}[t][][t]{\lcolsize}
-	\input{exp}
-	\bigbreak
-	\input{edu}
-\end{minipage}%
-\hfill%
-\begin{minipage}[t][][t]{\rcolsize}
-	%\input{part}
-	%\bigbreak
-	\input{skills}
-	\bigbreak
-	\input{pub}
-\end{minipage}
+% Contenido en una sola columna y en el orden solicitado
+\input{exp}
+\bigbreak
+\input{edu}
+\bigbreak
+\input{skills}
+\bigbreak
+\input{pub}
 \end{document}
